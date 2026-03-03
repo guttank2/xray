@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XRay</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon">◉</span>
+        <span class="logo-text">XRay</span>
+      </div>
+      <span class="version">v1.0</span>
+    </header>
+
+    <div class="card status-card">
+      <div class="status-indicator" id="statusIndicator">
+        <span class="status-dot"></span>
+        <span class="status-text">Ready to scan</span>
+      </div>
+      <p class="status-hint">Go to any Twitter/X profile</p>
+    </div>
+
+    <div class="card stats-card" id="statsCard" style="display: none;">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-value" id="postsCount">0</span>
+          <span class="stat-label">Posts</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value" id="totalLikes">0</span>
+          <span class="stat-label">Likes</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value" id="totalViews">0</span>
+          <span class="stat-label">Views</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="btn btn-primary" id="scrapeBtn">
+        <span class="btn-icon">⊙</span>
+        Scan Posts
+      </button>
+      <button class="btn btn-secondary" id="exportBtn" disabled>
+        Export CSV
+      </button>
+    </div>
+
+    <div class="progress-container" id="progressContainer" style="display: none;">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <span class="progress-text" id="progressText">Scanning...</span>
+    </div>
+
+    <footer class="footer">
+      <a href="https://github.com/yourusername/xray" target="_blank">GitHub</a>
+      <span class="separator">·</span>
+      <span>Made for content analysis</span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
