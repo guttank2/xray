@@ -33,11 +33,3 @@ Minimal Chrome extension that scrapes Twitter/X posts for content analysis.
 
 MIT
 ```
-
----
-
-### 4. Dodaj Topics (dla discoverable)
-
-Repo → About (gear icon) → Topics:
-```
-chrome-extension, twitter, scraper, content-analysis, open-source
